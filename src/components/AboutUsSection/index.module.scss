@@ -1,0 +1,237 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    // background: linear-gradient(to right, $green, $pink);
+    position: relative;
+    background-color: black;
+    z-index: 1;
+    min-height: 1200px;
+    @include desktop {
+        min-height: 1400px;
+    }
+}
+
+.planet1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 0;
+    top: 320px;
+    @include desktop {
+        width: 150px;
+        height: 150px;
+        bottom: 200px;
+        right: 200px;
+        top: auto;
+        left: auto;
+    }
+}
+
+.planet2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -40px;
+    right: 10px;
+    @include desktop {
+        width: 200px;
+        height: 200px;
+        top: -70px;
+        right: 150px;
+    }
+}
+
+.planet3 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    bottom: 70px;
+    // display: none;
+    @include desktop {
+        width: 150px;
+        height: 150px;
+        left: 150px;
+        top: 600px;
+    }
+}
+
+.text {
+    font-family: Exo2;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+    font-size: 13px;
+    @include desktop {
+        font-size: 21px;
+    }
+}
+
+.layout {
+    background-color: $dark-blue1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    @include desktop {
+        display: none;
+    }
+}
+
+.iframe {
+    position: relative;
+    z-index: 10;
+    width: 280px;
+    height: 140px;
+    @include desktop {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+.videoBorderImg {
+    width: 350px;
+    position: absolute;
+    @include desktop {
+        width: 750px;
+    }
+}
+
+.videoBorder {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    // display: none;
+    display: flex;
+    @include desktop {
+        padding-bottom: 0;
+        width: 750px;
+        height: 410px;
+    }
+}
+
+.pink {
+    color: $pink;
+}
+
+.title {
+    font-family: Aliey;
+    font-weight: 400;
+    font-size: 28px;
+    color: $white;
+    line-height: 47px;
+    text-align: center;
+    margin-bottom: 10px;
+    @include desktop {
+        line-height: 57px;
+        font-size: 52px;
+    }
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
+    z-index: 30;
+    margin-top: -25px;
+    @include desktop {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+}
+
+.gifContainer {
+    position: relative;
+    padding-top: 20px;
+    @include desktop {
+        padding-top: 50px;
+    }
+}
+
+.leftImg  {
+    position: absolute;
+    z-index: 5;
+    left: -100px;
+    width: 150px;
+    bottom: 0;
+    @include desktop {
+        width: 255px;
+    }
+}
+
+.rightImg  {
+    position: absolute;
+    z-index: 5;
+    right: -100px;
+    width: 150px;
+    bottom: 0;
+    @include desktop {
+        width: 255px;
+    }
+}
+
+.head {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    height: 300px;
+    left: -50px;
+    top: -25px;
+    @include desktop {
+        width: 445px;
+        height: 445px;
+        left: -90px;
+    }
+}
+
+.gif {
+    position: relative;
+    z-index: 10;
+    width: 160px;
+    height: 160px;
+    @include desktop {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+.textContainer {
+    max-width: 450px;
+    padding: 10px;
+    padding-top: 20px;
+    @include desktop {
+        padding: 0;
+        max-width: 900px;
+        padding-top: 20px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.paragraph {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.video {
+    height: 1550px;
+    width: auto;
+    @include desktop {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,151 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.wrapper {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("https://storage.googleapis.com/beardedbuddies/team-bg2.png");
+    @include desktop {
+        background-image: url("https://storage.googleapis.com/beardedbuddies/team-bg.png");
+        padding-top: 200px;
+    padding-bottom: 250px;
+    }
+}
+
+.planet1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 0;
+    @include desktop {
+        width: 200px;
+        height: 200px;
+        left: -80px;
+    }
+}
+
+.planet2 {
+    z-index: -1;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 15%;
+    top: 15%;
+    @include desktop {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.planet3 {
+    position: absolute;
+    width: 70px;
+        height: 70px;
+        bottom: -30px;
+        right: 50px;
+        z-index: 5;
+    @include desktop {
+        width: 100px;
+        height: 100px;
+        bottom: 200px;
+        right: 200px;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.meet {
+    color: $green;
+    font-size: 15px;
+    font-family: Aliey;
+    font-weight: 400;
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+.title {
+    font-size: 40px;
+    line-height: 30px;
+    color: $white;
+    padding-bottom: 15px;
+    font-family: Aliey;
+    font-weight: 400;
+    @include desktop {
+        padding-bottom: 25px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.subtitle {
+    color: $white;
+    font-size: 14px;
+    font-family: Exo2;
+    font-weight: 500;
+    @include desktop {
+        font-size: 18px;
+    }
+}
+
+.titleContainer {
+    width: 300px;
+    padding-bottom: 15px;
+    text-align: center;
+    @include desktop {
+        padding-bottom: 50px;
+    }
+}
+
+.membersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+}
+
+.rowOneMember {
+    width: 33.333% !important;
+    // @include desktop {
+    // }
+}
+
+.rowTwoMember {
+    // @include desktop {
+        width: 25% !important;
+    // }
+}
+
+.rowOne {
+    width: 80%;
+    max-width: 450px;
+    @include desktop {
+        max-width: initial;
+        width: 725px;
+    }
+}
+
+.rowTwo {
+    width: 100%;
+    max-width: 550px;
+    @include desktop {
+        max-width: initial;
+        width: 950px;
+    }
+}

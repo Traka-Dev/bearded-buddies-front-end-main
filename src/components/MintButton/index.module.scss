@@ -1,0 +1,16 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.mintButton {
+    font-family: Aliey;
+    font-weight: 400;
+    background: $turquoise1;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    color: $black;
+}
+
+.disabled {
+    cursor: not-allowed;
+}

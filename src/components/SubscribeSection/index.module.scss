@@ -1,0 +1,291 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.wrapper {
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url("https://storage.googleapis.com/beardedbuddies/subscribe-bg2.png");
+  @include desktop {
+    background-image: url("https://storage.googleapis.com/beardedbuddies/subscribe-bg.png");
+    height: 750px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 200px;
+}
+
+.modalBg {
+  height: 200px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 50px;
+}
+
+.formContainer {
+  width: 100%;
+  @include desktop {
+    width: 600px;
+  }
+}
+
+.label {
+  font-family: Exo2;
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.input {
+  input {
+    color: $white;
+    background-color: $gray;
+    font-family: Exo2;
+    font-weight: 600;
+    font-size: 15px;
+    width: 100%;
+    @include desktop {
+      width: 400px;
+    }
+  }
+}
+
+.modalButton {
+  background-color: $green;
+  border-color: $green;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  letter-spacing: 4px;
+  width: 140px;
+  padding: 4px;
+  font-family: Aliey;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 10px;
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: center;
+  @include desktop {
+    justify-content: normal;
+  }
+}
+
+.leftSide {
+  width: 50%;
+  // display: none;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  position: relative;
+  // @include desktop {
+  //     display: flex;
+  // }
+}
+
+.image {
+  width: 550px;
+  position: relative;
+  z-index: 10;
+}
+
+.bodyBB {
+  width: 210px;
+  position: relative;
+  z-index: 10;
+  right: 40px;
+  bottom: 0;
+  @include desktop {
+    height: 555px;
+    width: auto;
+  }
+}
+
+.arm {
+  width: 683px;
+  position: absolute;
+  z-index: 10;
+  right: -50px;
+  top: -225px;
+}
+
+.gifContainer {
+  position: relative;
+  z-index: 10;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  margin-right: -50px;
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
+.titleOne {
+  font-family: Aliey;
+  font-weight: 400;
+  color: $pink;
+  font-size: 15px;
+  @include desktop {
+    font-size: 18px;
+  }
+}
+
+.titleTwo {
+  font-family: AwesomeJourney;
+  font-weight: 600;
+  font-size: 22px;
+  color: $green;
+  padding-left: 5px;
+}
+
+.body {
+  color: $white;
+  font-family: Aliey;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  @include desktop {
+    line-height: 42px;
+    font-size: 37px;
+  }
+}
+
+.ring {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  bottom: 50px;
+  opacity: 0.7;
+  right: 35px;
+  z-index: 1;
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.head {
+  width: 546px;
+  position: absolute;
+  z-index: 10;
+  right: -4px;
+  top: -153px;
+}
+
+.button {
+  width: 150px;
+  padding-top: 10px;
+  // width: 286px;
+  @include desktop {
+    width: 286px;
+    // display: block;
+  }
+}
+
+.rightSide {
+  width: 50%;
+}
+
+.arrow {
+  display: none;
+  width: 50px;
+  @include desktop {
+    display: block;
+  }
+}
+
+.arrowContainer {
+  width: 280px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.planet {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 10%;
+  top: -100px;
+  display: none;
+  animation: rotation 10s infinite linear;
+  @include desktop {
+    display: block;
+  }
+}
+
+.buttonContainer {
+  // width: 150px;
+  display: flex;
+  cursor: pointer;
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.95);
+  }
+  // @include desktop {
+  //     width: 286px;
+  //     // display: block;
+  // }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.hidden {
+  display: none;
+}

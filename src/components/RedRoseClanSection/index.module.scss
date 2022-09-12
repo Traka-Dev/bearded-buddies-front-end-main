@@ -1,0 +1,399 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.wrapper {
+  padding-top: 30px;
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  flex-direction: column;
+  background-image: url("https://storage.googleapis.com/beardedbuddies/red-rose-clan-mobile-bg.png");
+  @include desktop {
+    background-image: url("https://storage.googleapis.com/beardedbuddies/red-rose-clan-bg.png");
+    height: 900px;
+    flex-direction: row;
+    padding-top: 0;
+  }
+}
+
+.content {
+  display: flex;
+  // @include desktop {
+  //     flex-direction: ;
+  //  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  width: 60%;
+  justify-content: flex-start;
+  @include desktop {
+    padding: 20px;
+    justify-content: center;
+    width: auto;
+  }
+}
+
+.title {
+  font-family: Crawler;
+  color: $white;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 60px;
+  @include desktop {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+.armGif {
+  width: 870px;
+  position: absolute;
+  left: -94px;
+  top: 69px;
+  z-index: 20;
+}
+
+.arm {
+  width: 140px;
+  position: absolute;
+  top: 515px;
+  z-index: 5;
+  right: 340px;
+  animation: scale 4s infinite alternate;
+  transform-origin: top right;
+  transform: rotate(-10deg);
+}
+
+.money {
+  width: 100px;
+  position: absolute;
+}
+
+.money1 {
+  width: 90px;
+  top: 150px;
+  left: 50px;
+  animation: money1 3s infinite alternate linear;
+}
+
+.money2 {
+  top: 300px;
+  left: 20px;
+  animation: money2 3s infinite alternate linear;
+}
+
+.money3 {
+  width: 65px;
+  top: 450px;
+  left: 0;
+  animation: money3 3s infinite alternate linear;
+}
+
+.money4 {
+  width: 90px;
+  top: 600px;
+  left: 100px;
+  animation: money4 3s infinite alternate linear;
+}
+
+.money5 {
+  top: 750px;
+  left: 30px;
+  animation: money5 3s infinite alternate linear;
+}
+
+.money6 {
+  top: 750px;
+  right: 30px;
+  animation: money6 3s infinite alternate linear;
+}
+
+.money7 {
+  width: 70px;
+  top: 570px;
+  right: 50px;
+  display: none;
+  animation: money7 3s infinite alternate linear;
+  @include desktop {
+    display: block;
+  }
+}
+
+.bbMobile {
+  display: block;
+
+  width: 130%;
+  max-width: 250px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.showDesktop {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+
+.showMobile {
+  display: block;
+  @include desktop {
+    display: none;
+  }
+
+  .body {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    max-width: 450px;
+  }
+}
+
+.leftSide {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  @include desktop {
+    width: inherit;
+    display: block;
+    justify-self: unset;
+  }
+}
+
+.money8 {
+  top: 250px;
+  right: 0;
+  display: none;
+  animation: money8 3s infinite alternate linear;
+  @include desktop {
+    display: block;
+  }
+}
+
+@keyframes money8 {
+  20% {
+    top: 252px;
+    right: -8px;
+  }
+  60% {
+    top: 250px;
+    right: -2px;
+  }
+  100% {
+    top: 242px;
+    right: 5px;
+  }
+}
+
+@keyframes money7 {
+  20% {
+    top: 575px;
+    right: 46px;
+  }
+  60% {
+    top: 571px;
+    right: 53px;
+  }
+  100% {
+    top: 573px;
+    right: 55px;
+  }
+}
+
+@keyframes money6 {
+  20% {
+    top: 745px;
+    right: 40px;
+  }
+  60% {
+    top: 750px;
+    right: 30px;
+  }
+  100% {
+    top: 740px;
+    right: 24px;
+  }
+}
+
+@keyframes money5 {
+  20% {
+    top: 745px;
+    left: 40px;
+  }
+  60% {
+    top: 750px;
+    left: 30px;
+  }
+  100% {
+    top: 740px;
+    left: 24px;
+  }
+}
+
+@keyframes money4 {
+  20% {
+    top: 610px;
+    left: 110;
+  }
+  60% {
+    top: 600px;
+    left: 100;
+  }
+  100% {
+    top: 593px;
+    left: 94px;
+  }
+}
+
+@keyframes money3 {
+  20% {
+    top: 440px;
+    left: -10;
+  }
+  60% {
+    top: 450px;
+    left: 0;
+  }
+  100% {
+    top: 442px;
+    left: 10px;
+  }
+}
+
+@keyframes money2 {
+  20% {
+    top: 310px;
+    left: 22px;
+  }
+  60% {
+    top: 300px;
+    left: 24px;
+  }
+  100% {
+    top: 295px;
+    left: 15px;
+  }
+}
+
+@keyframes money1 {
+  20% {
+    top: 153px;
+    left: 60px;
+  }
+  60% {
+    top: 149px;
+    left: 50px;
+  }
+  100% {
+    top: 155px;
+    left: 55px;
+  }
+}
+
+@keyframes scale {
+  100% {
+    right: 330px;
+    top: 520px;
+    transform-origin: top right;
+    transform: rotate(15deg);
+  }
+}
+
+.text {
+  font-family: Exo2;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+  font-size: 11px;
+  @include desktop {
+    font-size: 21px;
+  }
+}
+
+.label {
+  background-color: $red;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @include desktop {
+    border-radius: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.rock {
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.labelContainer {
+  max-width: 700px;
+  @include desktop {
+    margin-top: 40px;
+  }
+}
+
+.body {
+    padding-bottom: 20px;
+    @include desktop {
+        padding-bottom: 30px;
+    }
+}
+
+.bodyContainer {
+  max-width: 590px;
+}
+
+.bbContainer {
+  // display: none;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  // @include desktop {
+  //     display: block;
+  // }
+}
+
+.bb {
+  position: absolute;
+  width: 300px;
+  bottom: 35px;
+  right: 85px;
+  z-index: 10;
+}
+
+.head {
+  position: absolute;
+  width: 750px;
+  // top: 200px;
+  bottom: 30px;
+  right: -115px;
+  z-index: 15;
+}

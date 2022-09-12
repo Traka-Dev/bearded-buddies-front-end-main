@@ -1,0 +1,198 @@
+@import "../../sass/utils/mixins.scss";
+@import "../../sass/utils/colors.scss";
+
+.modalWrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+.modal {
+    position: relative;
+    background-position: center bottom;
+    background-color: transparent;
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width: 1024px){
+        background-size: 900px;
+        height: 600px;
+        background-position: center center;
+        .circlesImage {
+            display: none;
+        }
+    }
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.statesWrapper {
+    top:250px;
+    position: absolute;
+    max-height: 200px;
+    @media(max-width: 1024px){
+        top:220px;
+        max-height: 150px;
+    }
+}
+    .mainTitleWrapper {
+        position: absolute;
+        top: 25%;
+    }
+
+
+    .numberInput {
+        color: $white;
+        border: 1px solid $pink;
+        margin: 0 auto;
+        width: 50%;
+        background: transparent;
+        width: 150px;
+
+    }
+
+    .control {
+        border-color: $pink;
+        border-top: none;
+
+        &::after {
+            border-color: transparent transparent $pink transparent;
+        }
+    }
+
+    & .titleOne {
+        font-family: Aliey;
+        font-weight: 400;
+        color: $turquoise1;
+    }
+
+    .lineTitleWrapper {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+
+        .circleOne {
+            border: 2px solid $turquoise1;
+            border-radius: 6px;
+            height: 6px;
+            width: 6px;
+        }
+
+        .circleTwo {
+            border: 2px solid $turquoise1;
+            border-radius: 8px;
+            height: 8px;
+            width: 8px;
+        }
+
+        .circleThree {
+            border: 2px solid $turquoise1;
+            border-radius: 6px;
+            height: 6px;
+            width: 6px;
+        }
+
+        .lineTitleOne {
+            height: 0px;
+            width: 130px;
+            border: 1px solid $turquoise1;
+        }
+
+        .lineTitleTwo {
+            height: 0px;
+            width: 130px;
+            border: 1px solid $turquoise1;
+        }
+    }
+
+
+    & .bodyText {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: center;
+        color: $white;
+        font-family: Exo2;
+        width: 70%;
+    }
+
+    .belowInputTip {
+        color: white;
+        font-family: Exo2;
+    }
+
+    .biggerText {
+        font-family: Aliey;
+        font-size: 20px;
+        color: $pink;
+        padding: 8px;
+
+        span {
+            color: white;
+        }
+    }
+
+    .mediumText {
+        font-family: Aliey;
+        font-size: 16px;
+        color: $pink;
+        padding: 8px;
+    }
+
+    .mintButton {
+        color: black;
+        margin: 0 auto;
+        font-family: Aliey;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border: 8px solid $blue;
+        font-size: 27px;
+        width: 250px;
+        height: 48px;
+        background: $turquoise1;
+        margin-top: 16px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        &:hover {
+            background: $blue;
+        }
+    }
+
+    .circlesImage {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+
+    .coinWrapper {
+        position: absolute;
+        right: 8%;
+        bottom: 20%;
+    }
+
+    .closeButton {
+        position: absolute;
+        right: 7%;
+        top: 25%;
+        @media(max-width: 1024px){
+            right:10%;
+        }
+    }
+}

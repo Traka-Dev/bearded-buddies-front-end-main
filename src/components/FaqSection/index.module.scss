@@ -1,0 +1,119 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.wrapper {
+    padding-bottom: 10px;
+    padding-top: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background: linear-gradient(to right, $purple, $dark-blue1, $dark-blue2);
+    z-index: 2;
+    background-color: black;
+    @include desktop {
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    @include desktop {
+        width: inherit;
+        max-width: inherit;
+        padding: 0;
+    }
+}
+
+.arrow {
+    padding-right: 10px;
+    width: 15px;
+    transform: none;
+    transition: all 0.3s ease-in-out;
+    @include desktop {
+        width: 25px;
+        padding-right: 20px;
+    }
+}
+
+.planet {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    bottom: -100px;
+    display: none;
+    z-index: 20;
+    @include desktop {
+        display: block;
+    }
+}
+
+.question {
+    color: $green;
+    font-family: Aliey;
+    font-weight: 400;
+    font-size: 14px;
+    padding-right: 5px;
+    @include desktop {
+        font-size: 25px;
+    }
+}
+
+.answer {
+    color: $white;
+    font-family: Exo2;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.3s ease-out;
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+.questionContainer {
+    border-width: 3px;
+    border-color: $pink;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    // padding: 7px;
+    padding-left: 8px;
+    height: 40px;
+    justify-content: space-between;
+    @include desktop {
+        padding-left: 20px;
+        width: 900px;
+        height: 50px;
+    }
+}
+
+.answerContainer {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    @include desktop {
+        width: 900px;
+        padding: 23px;
+    }
+}
+
+.title {
+    font-family: Aliey;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    @include desktop {
+        font-size: 47px;
+    }
+}

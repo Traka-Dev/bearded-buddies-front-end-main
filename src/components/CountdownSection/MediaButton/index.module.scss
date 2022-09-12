@@ -1,0 +1,166 @@
+@import "../../../sass/utils/colors.scss";
+@import "../../../sass/utils/mixins.scss";
+
+.buttonContainer {
+
+}
+
+.button {
+    background-color: $turquoise1;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0.88;
+    cursor: pointer;
+    position: relative;
+    &:active {
+        opacity: 0.7;
+        transform: scale(0.95);
+    }
+}
+
+.big {
+    margin-left: 10px;
+    width: 85px;
+    height: 30px;
+    @include desktop {
+        width: 190px;
+        height: 68px;
+    }
+}
+
+.small {
+    width: 70px;
+    height: 24px;
+    @include desktop {
+        width: 100px;
+        height: 36px;
+
+    }
+}
+
+.big.button {
+    border-radius : 7px;
+    -moz-border-radius : 7px;
+    -webkit-border-radius : 7px;
+    @include desktop {
+        border-radius : 15px;
+        -moz-border-radius : 15px;
+        -webkit-border-radius : 15px;
+    }
+}
+
+.small.button {
+    border-radius : 7px;
+    -moz-border-radius : 7px;
+    -webkit-border-radius : 7px;
+}
+
+.title {
+    font-family: Aliey;
+    color: $black;
+    line-height: 1;
+}
+
+.big .title {
+    font-size: 14px;
+    padding-left: 10px;
+    @include desktop {
+        font-size: 34px;
+        padding-left: 40px;
+    }
+}
+
+.small .title {
+    font-size: 14px;
+    padding-left: 5px;
+    @include desktop {
+        font-size: 19px;
+        padding-left: 18px;
+    }
+}
+
+.label {
+    font-family: Exo2;
+    color: $black;
+    font-weight: 600;
+    font-size: 10px;
+    padding-left: 15px;
+    @include desktop {
+        font-size: 15px;
+    }
+}
+
+// .discord {
+//     position: absolute;
+//     bottom: 60px;
+//     left: 30px;
+//     @include desktop {
+//         position: relative;
+//     }
+// }
+
+// .twitter {
+//     position: absolute;
+//     bottom: 60px;
+//     right: 30px;
+//     @include desktop {
+//         position: relative;
+//     }
+// }
+
+// .tiktok {
+//     bottom: -65px;
+//     right: 130px;
+// }
+
+.instagram {
+    width: 95px;
+
+    @include desktop {
+        width: 137px;
+    }
+}
+
+.opensea {
+    width: 120px;
+}
+
+.logo {
+    position: absolute;
+    height: 100%;
+    left: 0;
+}
+
+.big .logo {
+    left: -19px;
+    height: 35px;
+    width: 35px;
+    @include desktop {
+        left: -19px;
+        height: 72px;
+        width: 72px;;
+    }
+}
+
+.small .logo {   
+    left: -18px;
+    height: 30px;
+    width: 30px;
+    @include desktop {
+        height: 45px;
+        width: 45px;;
+    }
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

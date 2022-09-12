@@ -1,0 +1,133 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.listContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  :not(:last-child) {
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: $transparent;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.menuItemsDesktop {
+  display: none;
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menuItemsMobile {
+  display: block;
+  @include desktop {
+    display: none;
+  }
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  background: linear-gradient(
+    rgba(12, 24, 46, 1) 0%,
+    rgba(20, 29, 59, 1) 6.24%,
+    rgba(57, 51, 121, 1) 38.86%,
+    rgba(85, 67, 167, 1) 66.48%,
+    rgba(102, 77, 195, 1) 87.71%,
+    rgba(108, 81, 205, 1) 100%
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include desktop {
+    background: linear-gradient(
+      to right,
+      $dark-blue1,
+      $dark-blue2,
+      $dark-blue3
+    );
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction: row;
+  }
+  .walletConnector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include desktop {
+      padding-top: 0;
+      padding-left: 20px;
+    }
+  }
+}
+
+.item {
+  font-family: Exo2;
+  font-weight: 600;
+  color: $white;
+  font-size: 13px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 13px;
+  padding-right: 13px;
+  text-decoration: none;
+  @include desktop {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: normal;
+  }
+}
+
+.button {
+  font-size: 17px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  font-family: Aliey;
+  font-weight: 400;
+  background: $turquoise1;
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  color: $black;
+  height: 28px;
+  text-decoration: none;
+  padding-left: 9px;
+  padding-right: 9px;
+  @include desktop {
+    font-size: 21px;
+    height: 35px;
+    padding-left: 10px;
+  padding-right: 10px;
+  }
+}
+.disabled {
+  cursor: not-allowed;
+}
+.connected {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+.iconContainer {
+  margin-left: 15px;
+}

@@ -1,0 +1,85 @@
+@import "../../../sass/utils/colors.scss";
+@import "../../../sass/utils/mixins.scss";
+
+.bodyContainer {
+    height: 90px;
+    background-color: $light-purple;
+    display: flex;
+    align-items: center;
+        width: 240px;
+    @include desktop {
+        width: 435px;
+        height: 115px;
+    }
+}
+
+.bodyContent {
+    padding-left: 15px;
+        padding-right: 15px;
+    @include desktop {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.bodyText {
+    color: $white;
+    font-family: Exo2;
+    font-weight: 500;
+    font-size: 10px;
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+.rowContainer{
+    display: flex;
+    height: 100px;
+    @include desktop {
+        height: 130px;
+    }
+}
+
+.image {
+    position: absolute;
+    top: -23px;
+    height: 91px;
+    @include desktop {
+        top: -37px;
+        height: 130px;
+        padding-right: 20px;
+    }
+}
+
+.imageContainer {
+    width: 70px;
+    position: relative;
+    // display: none;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        padding-right: 15px;
+        display: block;
+    }
+}
+
+.label {
+    color: $white;
+    font-family: Exo2;
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 14px;
+    @include desktop {
+        font-size: 27px;
+    }
+}
+
+.labelContainer {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include desktop {
+        width: 120px;
+    }
+}

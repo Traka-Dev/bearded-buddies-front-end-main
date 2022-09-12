@@ -1,0 +1,200 @@
+@import "../../sass/utils/mixins.scss";
+@import "../../sass/utils/colors.scss";
+
+.video {
+    width: 100%;
+    // z-index: -10;
+    position: relative;
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.mobileImg {
+    width: 100%;
+    // z-index: -10;
+    padding-top: 95px;
+    position: relative;
+    display: block;
+    @include desktop {
+        display: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    // margin-bottom: -4px;
+    @include desktop {
+        margin-top: 60px;
+    }
+}
+
+.logo {
+    // display: none;
+    width: 120px;
+    position: absolute;
+    z-index: 5;
+    right: 30px;
+        top: 120px;
+    @include desktop {
+        // display: block;
+        width: 250px;
+        right: 100px;
+        top: 100px;
+    }
+}
+
+.modal {
+    position: relative;
+
+    .body {
+        position: absolute;
+        top: 20%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .numberInput {
+        color: $white;
+        border: 1px solid $pink;
+        margin: 0 auto;
+        width: 50%;
+        background: transparent;
+        width:150px;
+
+    }
+    .control {
+        border-color: $pink;
+        border-top:none;
+        &::after{
+            border-color: transparent transparent  $pink transparent;
+        }
+    }
+
+    & .titleOne {
+        font-family: Aliey;
+        font-weight: 400;
+        color: $turquoise1;
+    }
+
+    .lineTitleWrapper {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+
+        .circleOne {
+            border: 2px solid $turquoise1;
+            border-radius: 6px;
+            height: 6px;
+            width: 6px;
+        }
+
+        .circleTwo {
+            border: 2px solid $turquoise1;
+            border-radius: 8px;
+            height: 8px;
+            width: 8px;
+        }
+
+        .circleThree {
+            border: 2px solid $turquoise1;
+            border-radius: 6px;
+            height: 6px;
+            width: 6px;
+        }
+
+        .lineTitleOne {
+            height: 0px;
+            width: 130px;
+            border: 1px solid $turquoise1;
+        }
+
+        .lineTitleTwo {
+            height: 0px;
+            width: 130px;
+            border: 1px solid $turquoise1;
+        }
+    }
+
+
+    & .bodyText {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: center;
+        color: $white;
+        font-family: Exo2;
+        width: 70%;
+    }
+    .belowInputTip{
+        color: white;
+        font-family: Exo2;
+    }
+    .questionText {
+        font-family: Aliey;
+        font-size: 20px;
+        color: $pink;
+        padding:8px;
+        span {
+            color:white;
+        }
+    }
+
+  
+
+    .circlesImage {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        z-index: -1;
+    }
+
+    .coinWrapper {
+        position: absolute;
+        right:8%;
+        bottom: 25%;
+        z-index: -1;
+    }
+}
+
+.mint {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius : 13px;
+    -moz-border-radius : 13px;
+    -webkit-border-radius : 13px;
+    // padding: 10px;
+    bottom: 60px;
+    left: 10%;
+    border-style: solid;
+    border-width: 7px;
+    font-size: 35px;
+        height: 50px;
+        width: 110px;
+    border-color: $blue;
+    // display: none;
+    @include desktop {
+        border-radius : 22px;
+    -moz-border-radius : 22px;
+    -webkit-border-radius : 22px;
+        font-size: 65px;
+        height: 90px;
+        width: 200px;
+        padding: 10px;
+        left: 30%;
+        bottom: 120px;
+        // display: block;
+    }
+}

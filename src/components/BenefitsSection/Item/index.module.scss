@@ -1,0 +1,395 @@
+@import "../../../sass/utils/colors.scss";
+@import "../../../sass/utils/mixins.scss";
+
+.body {
+    font-family: Exo2;
+    font-weight: 400;
+    color: $white;
+    font-size: 10px;
+    @include desktop {
+        font-size: 17px;
+    }
+}
+
+.events  .body, .ranks  .body, .network  .body {
+    text-align: center;
+}
+
+.sales .body, .nextProject .body {
+    text-align: center;
+    @include desktop {
+        text-align: right;
+    }
+}
+
+.airdrops .body, .dreamProject .body {
+    text-align: center;
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.titleContainer {
+    height: 20px;
+    border-radius : 10px;
+    -moz-border-radius : 10px;
+    -webkit-border-radius : 10px;
+    background-color: $turquoise1;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 20;
+    @include desktop {
+        height: 30px;
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.title {
+    font-size: 14px;
+    color: $black;
+    font-family: Aliey;
+    font-weight: 400;
+    @include desktop {
+        font-size: 21px;
+    }
+}
+
+.image {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    z-index: 10;
+    @include desktop {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.ring {
+    position: absolute;
+    z-index: 6;
+    width: 100px;
+    height: 100px;
+    @include desktop {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+.sales .ring, .nextProject .ring {
+    top: -18px;
+    left: -27px;
+    @include desktop {
+        top: -25px;
+        left: -38px;
+    }
+}
+
+.dreamProject .ring {
+    top: -23px;
+    left: -21px;
+    @include desktop {
+        top: -36px;
+        left: -32px;
+    }
+}
+
+.airdrops .ring {
+    top: -21px;
+    left: -19px;
+    @include desktop {
+        top: -31px;
+        left: -27px;
+    }
+}
+
+.events .ring, .network .ring {
+    top: -18px;
+    left: -22px;
+    @include desktop {
+        top: -28px;
+        left: -34px;
+    }
+}
+
+.ranks .ring {
+    top: -20px;
+    left: -21px;
+    @include desktop {
+        top: -31px;
+        left: -32px;
+    }
+}
+
+.wrapper {
+    @include desktop {
+        position: absolute;
+    }
+}
+
+.border {
+    position: absolute;
+    z-index: 1;
+    background-color: $dark-blue1;
+}
+
+.events {
+    top: -50px;
+    left: 150px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 80%;
+    @include desktop {
+        padding-top: 0;
+        width: 600px;
+        padding-bottom: 0;
+    }
+}
+
+.events .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.events .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.events .border, .ranks .border {
+    height: 14px;
+    width: 190px;
+    top: 40px;
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.airdrops {
+    top: 220px;
+    padding-bottom: 50px;
+    width: 45%;
+    left: 0;
+    position: absolute;
+    @include desktop {
+        padding-bottom: 0;
+        width: 470px;
+        left: -53px;
+    }
+}
+
+.airdrops .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    @include desktop {
+        align-items: flex-start;
+    }
+}
+
+.airdrops .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+.airdrops .border, .dreamProject .border {
+    width: 5px;
+    height: 190px;
+    left: 50px;
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.sales {
+    right: 10px;
+    top: 220px;
+    padding-bottom: 50px;
+    width: 45%;
+    position: absolute;
+    @include desktop {
+        right: -53px;
+        top: 250px;
+        padding-bottom: 0;
+        width: 470px;
+    }
+}
+
+.sales .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+    align-items: center;
+    @include desktop {
+        align-items: flex-end;
+    }
+}
+
+.sales .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row-reverse;
+    }
+}
+
+.sales .border, .nextProject .border {
+    width: 5px;
+    height: 190px;
+    right: 50px;
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.network {
+    top: 420px;
+    padding-bottom: 50px;
+    position: absolute;
+    width: 80%;
+    @include desktop {
+        width: 600px;
+        padding-bottom: 0;
+        left: 150px;
+    }
+}
+
+.network .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.network .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dreamProject {
+    left: 0;
+    top: 650px;
+    width: 45%;
+    padding-bottom: 50px;
+    position: absolute;
+    @include desktop {
+        top: unset;
+        width: 470px;
+        left: -53px;
+        bottom: 150px;
+        padding-bottom: 0;
+    }
+}
+
+.dreamProject .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    align-items: center;
+    @include desktop {
+        align-items: flex-start;
+    }
+}
+
+.dreamProject .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+.nextProject {
+    right: 0;
+    top: 650px;
+    padding-bottom: 50px;
+    position: absolute;
+    width: 45%;
+    @include desktop {
+        top: unset;
+        padding-bottom: 0;
+        width: 470px;
+        bottom: 155px;
+        right: -53px;
+    }
+}
+
+.nextProject .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+    align-items: center;
+    @include desktop {
+        align-items: flex-end;
+    }
+}
+
+.nextProject .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include desktop {
+        flex-direction: row-reverse;
+    }
+}
+
+.ranks {
+    bottom: 0;
+    padding-bottom: 40px;
+    position: absolute;
+    width: 80%;
+    @include desktop {
+        width: 800px;
+        padding-bottom: 0;
+        bottom: -170px;
+        left: 50px;
+    }
+}
+
+.ranks .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ranks .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

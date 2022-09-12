@@ -1,0 +1,45 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: linear-gradient(to right, $purple, $dark-blue1, $dark-blue2);
+}
+
+.container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    z-index: 20;
+    @include desktop {
+        position: absolute;
+        padding-top: 0;
+    padding-bottom: 0;
+    }
+}
+
+.title {
+    font-family: Aliey;
+    font-weight: 400;
+    font-size: 38px;
+    color: $white;
+    line-height: 57px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    @include desktop {
+        font-size: 48px;
+    }
+}
+
+.video {
+    display: none;
+    @include desktop {
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,107 @@
+@import "../../sass/utils/colors.scss";
+@import "../../sass/utils/mixins.scss";
+
+.wrapper {
+    background: linear-gradient(to right, $purple, $dark-blue1, $dark-blue2);
+    z-index: 1;
+    position: relative;
+    background-color: black;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 250px;
+
+    }
+}
+
+.itemsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itemContainer {
+    width: 50%;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 30px;
+    @include desktop {
+        width: 250px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleOne {
+    font-family: AwesomeJourney;
+    font-weight: 600;
+    font-size: 45px;
+    color: $green;
+    @include desktop {
+        font-size: 55px;
+    }
+}
+
+.titleTwo {
+    color: $white;
+    font-family: Aliey;
+    font-weight: 400;
+    font-size: 37px;
+    @include desktop {
+        font-size: 47px;
+    }
+}
+
+.itemWrapper {
+    padding: 10px;
+}
+
+.circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 1px solid $gray;
+}
+
+.active {
+    background-color: $gray;
+}
+
+.circleContainer {
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        display: none;
+    }
+}
+
+.itemImg {
+    width: 100%;
+}
+
+.carouselContainer {
+    padding-top: 50px;
+    max-width: 450px;
+    @include desktop {
+        max-width: inherit;
+    }
+}
