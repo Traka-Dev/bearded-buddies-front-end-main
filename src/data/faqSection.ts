@@ -5,7 +5,7 @@ export const strings = {
             id: 0,
             question: "Whats the minting price?",
             answer: [
-                "The minting price is 0.08 ETH + Gas Fees on the Presale (Whitelist) and 0.1 ETH + Gas Fees for the Public Sale",
+                "The minting price is 0.08 ETH + Gas Fees on the public sale. Same price for everyone.",
             ]
         },
         {

@@ -5,64 +5,56 @@ export const strings = {
             id: 0,
             label: "DONE",
             body: [
-                "Social Media and community growth.",
-                "Weekly Bearded Buddies NFT giveaways until drop.",
-                "Weekly whitelist giveaway until drop.",
+                "Social Media and community growth.",                
             ]
         },
         {
             id: 1,
             label: "5%",
             body: [
-                "60k reinvested in the growth of the community.",
+                "Reinvestment in marketing and content production.",
             ]
         },
         {
             id: 2,
             label: "10%",
             body: [
-                "Repayment of the investment.",
+                "Repayment to early investors and drop of the podcast.",
             ]
         },
         {
             id: 3,
             label: "20%",
             body: [
-                "Start creation of 10 uniquely customized and one time production of a never seen product in the NFT world. These items will combine great art and luxury. To be revealed…",
-                "These Customized art pieces will increase BB value in a limitless way.",
+                "Start the creation of BB Network Dapp and the BB Shop.",
             ]
         },
         {
             id: 4,
             label: "40%",
             body: [
-                "20 mystery boxes giveaway with unique Bearded Buddies items."
+                "Airdrops. Mystery boxes giveaways to early supporters and holders."
             ]
         },
         {
             id: 5,
             label: "60%",
             body: [
-                "Drop of merchandise shop with unique designs, exclusive for BB holders."
+                "Drop of Learn 2 Earn Mechanisms and startup/project submission for the treasury."
             ]
         },
         {
             id: 6,
             label: "80%",
             body: [
-                "First IRL Party for holders. Secret location. Surprises and gifts.",
-                "Tournaments, Challenges and Prizes. Best experience.",
-                "Buy real estate to build the BB house. Location TBA."
+                "First BBCON. Tournaments and challenges. Business talks. Speakers. Stands. DJs. Partnerships. Video games. Metaverse.",
             ]
         },
         {
             id: 7,
             label: "100%",
             body: [
-                "Reveal the next project with Whitelist for all holders.",
-                "Reinvestment on BB community and marketing.",
-                "Massive reinvestment in the next project.",
-                "10 Unique art pieces for top holders."
+                "Buy real estate for the BB house. Location Bacalar (near Tulum).",
             ]
         }
     ]
