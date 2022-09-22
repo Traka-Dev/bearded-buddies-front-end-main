@@ -8,6 +8,7 @@ import Alejandro from "../../assets/images/alejandro.png";
 import Marco from "../../assets/images/marco.png";
 import Samuel from "../../assets/images/samuel.png";
 import Adrian from "../../assets/images/adrian.png";
+import Luis from '../../assets/images/luis.png'
 import Member, {ListProps} from './Member';
 import lottie from "lottie-web";
 import planetAnimation from "../../assets/gifs/team-planet/data.json";
@@ -35,7 +36,7 @@ export function TeamSection() {
             {image: Melisa, image2: false},
             {image: Alejandro, image2: false},
         ],[
-            {image: "https://storage.googleapis.com/beardedbuddies/collection-16.png", image2: true},
+            {image: Luis, image2: true},
             {image: Marco, image2: false},
             {image: Samuel, image2: false},
             {image: Adrian, image2: false}

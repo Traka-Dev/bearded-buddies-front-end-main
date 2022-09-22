@@ -15,7 +15,7 @@ const defaultMint: MintObjectProps = {
   }
 
 const store = createState({
-    mintValue: 0,
+    mintValue: 1,
     mintObject : defaultMint,
     price: 0,
     isLoading: false,
