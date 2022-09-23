@@ -138,7 +138,7 @@ const ModalInitialState = (props: any) => {
             onClick={() => handleconnectAccount()}
             disabled={mintValue.get() <= 0 ? true : false}
           >
-            Buy With Eth
+            Buy with ETH
           </Button>
         )}
         <CrossmintPayButton
