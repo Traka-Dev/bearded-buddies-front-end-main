@@ -23,6 +23,7 @@ const store = createState({
     noNfts: false,
     isSuccess: false,
     isError: false,
+    noWallet: false,
     isShowingMint: false,
     isShowingCollection: false,
     nftIdList: [],

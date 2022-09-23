@@ -9,14 +9,21 @@ import { useState, useHookstate } from "@hookstate/core"
 import store from "../../../store/store"
 import MintObjectProps from "../../../@types/mintObject"
 import { CrossmintPayButton } from "@crossmint/client-sdk-react-ui"
-import { connectAccount } from "../../../functions/connectAccount";
+import { connectAccount } from "../../../functions/connectAccount"
 
 declare const window: any
 
 const ModalInitialState = (props: any) => {
   const { account } = useWeb3()
-  const { mintValue, mintObject, price, isSuccess, isLoading, isError } =
-    useState(store)
+  const {
+    mintValue,
+    mintObject,
+    price,
+    isSuccess,
+    isLoading,
+    isError,
+    noWallet,
+  } = useState(store)
   const total = useHookstate(".08")
   const web3 = new Web3(Web3.givenProvider)
 
@@ -47,7 +54,7 @@ const ModalInitialState = (props: any) => {
     })
   }
 
-  const preventMinus = (val: number) => {    
+  const preventMinus = (val: number) => {
     if (isNaN(val)) {
       mintValue.set(1)
     } else {
@@ -59,23 +66,38 @@ const ModalInitialState = (props: any) => {
     checkPrice(window.ethereum?.selectedAddress).then(priceItem => {
       let priceNft
       if (priceItem) {
-        priceNft = priceItem.get() === 0 ? 80000000000000000 : priceItem
+        priceNft = priceItem == 0 ? 80000000000000000 : priceItem
       } else {
         priceNft = 80000000000000000
       }
       console.log("precio ->", priceNft)
       let priceConverted = Number(web3.utils.fromWei(String(priceNft), "ether"))
       price.merge(priceConverted)
+      total.set((mintValue.get() * priceConverted).toString())
     })
   }, [price.get(), mintValue.get(), isLoading.get(), isSuccess.get()])
 
   useEffect(() => {
-    total.set((mintValue.get() * price.get()).toString())
-  }, [mintValue.get()])
-
-  useEffect(() => {
-    total.set((mintValue.get() * Number(web3.utils.fromWei(String(price.get()), "ether"))).toString())
+    if (price.get() === 80000000000000000) {
+      total.set(
+        (
+          mintValue.get() *
+          Number(web3.utils.fromWei(String(price.get()), "ether"))
+        ).toString()
+      )
+    } else {
+      total.set((mintValue.get() * price.get()).toString())
+    }
   }, [])
+
+  const handleconnectAccount = () => {
+    if (window?.ethereum) {
+      connectAccount()
+    } else {
+      noWallet.set(true)
+      isError.set(true)
+    }
+  }
 
   return (
     <>
@@ -102,32 +124,30 @@ const ModalInitialState = (props: any) => {
         For : {!mintValue ? 0 : price.get() * mintValue.get()} ETH
       </Text>
       <div style={{ display: "flex", alignItems: "center" }}>
-        {
-          account ? (
-        <Button
-          className={styles.mintButton}
-          onClick={() => handleMint(window.ethereum?.selectedAddress)}
-          disabled={mintValue.get() <= 0 ? true : false}
-        >
-          Mint
-        </Button>
-          ) : (
-            <Button
+        {account ? (
+          <Button
             className={styles.mintButton}
-            onClick={() => connectAccount()}
+            onClick={() => handleMint(window.ethereum?.selectedAddress)}
             disabled={mintValue.get() <= 0 ? true : false}
           >
-            Connect
-          </Button> 
-          )
-        }
+            Mint with ETH
+          </Button>
+        ) : (
+          <Button
+            className={styles.mintButton}
+            onClick={() => handleconnectAccount()}
+            disabled={mintValue.get() <= 0 ? true : false}
+          >
+            Buy With Eth
+          </Button>
+        )}
         <CrossmintPayButton
           clientId="0deee656-9b7b-48b9-be0b-8cee9e2e5382"
           className="crossmintBtn-2"
           mintConfig={{
             type: "erc-721",
             totalPrice: total.get(),
-            _numberOfBeardedBuddies: mintValue.get()
+            _numberOfBeardedBuddies: mintValue.get(),
           }}
         />
         <CrossmintPayButton
