@@ -11,7 +11,7 @@ const ModalErrorState = () => {
     return (
       <>
         <Text className={styles.biggerText} style={{ color: "white" }}>
-          No Wallet Found!
+          Wallet Not Found!
         </Text>
         <Text className={styles.mediumText} style={{ color: "white" }}>
           Please check your wallet is unlocked and enabled.
