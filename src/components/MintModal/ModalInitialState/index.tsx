@@ -47,9 +47,7 @@ const ModalInitialState = (props: any) => {
     })
   }
 
-  const preventMinus = (val: number) => {
-    console.log("Account", account)
-    console.log("provider", web3)
+  const preventMinus = (val: number) => {    
     if (isNaN(val)) {
       mintValue.set(1)
     } else {
@@ -95,8 +93,9 @@ const ModalInitialState = (props: any) => {
           defaultVariant: styles.numberInput,
           control: styles.control,
         }}
+        value={mintValue.get()}
         onChange={val => preventMinus(val!)}
-        min={0}
+        min={1}
       />
       <Text className={styles.belowInputTip} size="sm">
         For : {!mintValue ? 0 : price.get() * mintValue.get()} ETH
@@ -122,21 +121,21 @@ const ModalInitialState = (props: any) => {
           )
         }
         <CrossmintPayButton
-          clientId="3fc5ca61-fec3-4285-8bca-28b72be53352"
+          clientId="0deee656-9b7b-48b9-be0b-8cee9e2e5382"
           className="crossmintBtn-2"
           mintConfig={{
-            otalPrice: total.value,
-            _mintAmount: mintValue.get(),
             type: "erc-721",
+            totalPrice: total.value,
+            _numberOfBeardedBuddies: mintValue.get()
           }}
         />
         <CrossmintPayButton
-          clientId="3fc5ca61-fec3-4285-8bca-28b72be53352"
+          clientId="0deee656-9b7b-48b9-be0b-8cee9e2e5382"
           className="crossmintBtn-2"
           paymentMethod="SOL"
           mintConfig={{
             totalPrice: total.value,
-            _mintAmount: mintValue.get(),
+            _numberOfBeardedBuddies: mintValue.get(),
             type: "erc-721",
           }}
         />
