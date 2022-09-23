@@ -70,11 +70,12 @@ const ModalInitialState = (props: any) => {
   }, [price.get(), mintValue.get(), isLoading.get(), isSuccess.get()])
 
   useEffect(() => {
-    console.log("test mintvalue listener", mintValue.get())
-    console.log("MintValue value ", mintValue.value)
-    console.log("TOTAL BEFORE CHANGE", total.value)
     total.set((mintValue.get() * price.get()).toString())
   }, [mintValue.get()])
+
+  useEffect(() => {
+    total.set((mintValue.get() * Number(web3.utils.fromWei(String(price.get()), "ether"))).toString())
+  }, [])
 
   return (
     <>
@@ -125,7 +126,7 @@ const ModalInitialState = (props: any) => {
           className="crossmintBtn-2"
           mintConfig={{
             type: "erc-721",
-            totalPrice: total.value,
+            totalPrice: total.get(),
             _numberOfBeardedBuddies: mintValue.get()
           }}
         />
@@ -134,7 +135,7 @@ const ModalInitialState = (props: any) => {
           className="crossmintBtn-2"
           paymentMethod="SOL"
           mintConfig={{
-            totalPrice: total.value,
+            totalPrice: total.get(),
             _numberOfBeardedBuddies: mintValue.get(),
             type: "erc-721",
           }}
