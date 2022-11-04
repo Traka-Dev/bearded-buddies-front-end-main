@@ -53,7 +53,6 @@ function Landing() {
         <RedRoseClanSection />
         <BenefitsSection />
         <NftSection />
-        <RoadmapSection />
         <TeamSection />
         <FaqSection />
         <SubscribeSection />
