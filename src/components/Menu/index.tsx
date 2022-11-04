@@ -29,10 +29,6 @@ const itemList: menuItem[] = [
     path: "#redRoseClan",
   },
   {
-    label: "Roadmap",
-    path: "#roadmap",
-  },
-  {
     label: "Team",
     path: "#team",
   },
