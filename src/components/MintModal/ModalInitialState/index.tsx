@@ -140,26 +140,7 @@ const ModalInitialState = (props: any) => {
           >
             Buy with ETH
           </Button>
-        )}
-        <CrossmintPayButton
-          clientId="0deee656-9b7b-48b9-be0b-8cee9e2e5382"
-          className="crossmintBtn-2"
-          mintConfig={{
-            type: "erc-721",
-            totalPrice: total.get(),
-            _numberOfBeardedBuddies: mintValue.get(),
-          }}
-        />
-        <CrossmintPayButton
-          clientId="0deee656-9b7b-48b9-be0b-8cee9e2e5382"
-          className="crossmintBtn-2"
-          paymentMethod="SOL"
-          mintConfig={{
-            totalPrice: total.get(),
-            _numberOfBeardedBuddies: mintValue.get(),
-            type: "erc-721",
-          }}
-        />
+        )}        
       </div>
     </>
   )
