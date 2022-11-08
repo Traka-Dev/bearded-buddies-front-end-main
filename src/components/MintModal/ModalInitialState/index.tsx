@@ -14,6 +14,7 @@ import { connectAccount } from "../../../functions/connectAccount"
 declare const window: any
 
 const ModalInitialState = (props: any) => {
+  const defaultPrice = 40000000000000000
   const { account } = useWeb3()
   const {
     mintValue,
@@ -24,7 +25,7 @@ const ModalInitialState = (props: any) => {
     isError,
     noWallet,
   } = useState(store)
-  const total = useHookstate(".08")
+  const total = useHookstate(".04")
   const web3 = new Web3(Web3.givenProvider)
 
   async function handleMint(account: any) {
@@ -66,19 +67,21 @@ const ModalInitialState = (props: any) => {
     checkPrice(window.ethereum?.selectedAddress).then(priceItem => {
       let priceNft
       if (priceItem) {
-        priceNft = priceItem == 0 ? 80000000000000000 : priceItem
+        priceNft = priceItem
       } else {
-        priceNft = 80000000000000000
+        priceNft = defaultPrice
       }
       console.log("precio ->", priceNft)
       let priceConverted = Number(web3.utils.fromWei(String(priceNft), "ether"))
       price.merge(priceConverted)
       total.set((mintValue.get() * priceConverted).toString())
+      console.log("TOAL")
+      console.dir(total.get())
     })
   }, [price.get(), mintValue.get(), isLoading.get(), isSuccess.get()])
 
   useEffect(() => {
-    if (price.get() === 80000000000000000) {
+    if (price.get() === defaultPrice) {
       total.set(
         (
           mintValue.get() *
@@ -140,7 +143,26 @@ const ModalInitialState = (props: any) => {
           >
             Buy with ETH
           </Button>
-        )}        
+        )}
+        <CrossmintPayButton
+          clientId="0deee656-9b7b-48b9-be0b-8cee9e2e5382"
+          className="crossmintBtn-2"
+          mintConfig={{
+            type: "erc-721",
+            totalPrice: total.get(),
+            _numberOfBeardedBuddies: mintValue.get(),
+          }}
+        />
+        <CrossmintPayButton
+          clientId="0deee656-9b7b-48b9-be0b-8cee9e2e5382"
+          className="crossmintBtn-2"
+          paymentMethod="SOL"
+          mintConfig={{
+            totalPrice: total.get(),
+            _numberOfBeardedBuddies: mintValue.get(),
+            type: "erc-721",
+          }}
+        />
       </div>
     </>
   )
