@@ -17,7 +17,7 @@ const defaultMint: MintObjectProps = {
 const store = createState({
     mintValue: 1,
     mintObject : defaultMint,
-    price: 80000000000000000,
+    price: 40000000000000000,
     isLoading: false,
     isLoadingNft: false,
     noNfts: false,
