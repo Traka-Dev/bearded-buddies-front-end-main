@@ -10,6 +10,7 @@ import leftCard from "../../assets/images/about-us-card-1.png";
 import rightCard from "../../assets/images/about-us-card-2.png";
 import lottie from "lottie-web";
 import { isDesktop } from "react-device-detect";
+import { text } from "stream/consumers";
 
 export function AboutUsSection({isMobile}:{isMobile: boolean}) {
     const planetContainer1 = createRef<HTMLDivElement>();
@@ -73,7 +74,18 @@ export function AboutUsSection({isMobile}:{isMobile: boolean}) {
                 <div className={styles.textContainer}>
                     {strings.body.map(item =>
                         <div key={`about-us-${item.id}`} className={styles.paragraph}>
-                            {item.arr.map(text => <span key={`about-us-${item.id}-${text.text}`} className={`${styles.text} ${text.pink ? styles.pink : '' }`}>{text.text}</span>)}
+                            {item.arr.map(text => {
+                            if(text.hasOwnProperty("list")){
+                                return(       
+                                <>   
+                                <br/>                     
+                                <li key={`about-us-${item.id}-${text.text}`} className={`${styles.text} ${text.pink ? styles.pink : '' }`}>
+                                    {text.text}
+                                </li></>)
+                            }
+                            return(
+                            <span key={`about-us-${item.id}-${text.text}`} className={`${styles.text} ${text.pink ? styles.pink : '' }`}>{text.text}</span>)
+                            })}
                         </div>
                     )}
                 </div>

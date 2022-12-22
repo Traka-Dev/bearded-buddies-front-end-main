@@ -5,14 +5,15 @@ export const strings = {
             id: 0,
             arr: [
                 {
-                    text: "Bearded Buddies is a 10,000 NFT collection located in the Ethereum blockchain in an ERC-721 smart contract. Every token is randomly generated using  VRF Chainlink technology that makes every BB "
-                },
-                {
-                    text: "totally unique. ",
+                    text: "Bearded buddies ",
                     pink: true,
                 },
                 {
-                    text: "To make it even more special we made sure that every unique trait is original and hand drawn by our artist."
+                    text: "is not just a brand, Bearded Buddies is a purpose: "
+                },
+                {
+                    text: "support. ",
+                    pink: true,
                 }
             ],
         },
@@ -20,19 +21,15 @@ export const strings = {
             id: 1,
             arr: [
                 {
-                    text: "Besides helping you connect with investors, other entrepreneurs and work teams, BB can invest in your project too. We have our own fund, wich will be filled with 50% of the secondary sales. ",
-                },
-                {
-                    text: "These funds will be invested 100% in projects presented by the community.",
-                    pink: true,
-                },
+                    text: "Every time someone undertakes the project of starting a company, brand or startup, 3 almost-inevitable problems may be encountered: investors, a good work team that understands your company's vision, and solid work systems.",
+                }              
             ]
         },
         {
             id: 2,
             arr: [
                 {
-                    text: "As we said earlier, we want a long lasting community. That's why we want to help every member to grow with us by learning, creating and exploring. Members can enjoy from a list of benefits, some of which include partnership discounts with key companies for the development of your projects."
+                    text: "If these three factors are not covered, it is impossible for an idea to materialize and grow; and in Bearded Buddies, we understand how difficult it can be to cover this from day one."
                 }
             ]
         },
@@ -40,7 +37,11 @@ export const strings = {
             id: 3,
             arr: [
                 {
-                    text: "Bearded Buddies are here to stay, that’s why we are going to invest in real state land for the BB house."
+                    text: "Our mission ",
+                    pink: true,
+                },
+                {
+                    text: "is to create a solid community that lasts and grows over time, providing the necessary tools and connections to entrepreneurs, small businesses, and startups so they may reach their goals.",                   
                 }
             ]
         },
@@ -48,15 +49,49 @@ export const strings = {
             id: 4,
             arr: [
                 {
-                    text: "We have so much plans for the future. Join us."
-                }
+                    text: "To achieve this, we have created the following channels:"
+                },
             ]
         },
         {
-            id: 5,
+            id:5,
             arr: [
                 {
-                    text: "Because the future is what we do today."
+                    text: "Digital assets (NFTs) sale",
+                    pink: false,
+                    list: true
+                },
+                {
+                    text: "Treasury fund",
+                    pink: false,
+                    list: true
+                },
+                {
+                    text: "Clothing Brand and Accessories",
+                    pink: false,
+                    list: true
+                },
+                {
+                    text: "Networking and Business managing Platform",
+                    pink: false,
+                    list: true
+                },
+                {
+                    text: "BBCON networking events and talks",
+                    pink: false,
+                    list: true
+                },
+            ]
+        },
+        {
+            id: 6,
+            arr: [
+                {
+                    text: "We believe ",
+                    pink: true
+                },
+                {
+                    text: "that the future of business must be highly collaborative, viewing each individual as a data cube in the blockchain, and understanding that we are all part of the same network. "
                 }
             ]
         }
