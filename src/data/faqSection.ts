@@ -5,7 +5,7 @@ export const strings = {
             id: 0,
             question: "Whats the minting price?",
             answer: [
-                "The minting price is 0.08 ETH + Gas Fees on the public sale. Same price for everyone.",
+                "The Minting price is 0.04 ETH open to everyone. Whitelist / Builder buddies price is 0.03 ETH",
             ]
         },
         {
@@ -19,7 +19,7 @@ export const strings = {
             id: 2,
             question: "Why should I buy a Bearded Buddy?",
             answer: [
-                "Bearded Buddies is full of benefits that every owner can enjoy. From Networking and Co-working to the BB headquarters IRL to relax. BB is here to change the way of doing digital businesses, DeFi and NFTs are a big part of this revolution.",
+                "Bearded Buddies is a movement. We are here to bring support to Creators, Builders and entrepreneurs around the world. By buying a BB you contribute to build this. Besides, you get exclusive benefits such as Free access to our platform, Networking, Clothing Brand, IRL Events, and more.",
             ]
         },
         {
@@ -40,10 +40,10 @@ export const strings = {
             id: 5,
             question: "How do I mint a Bearded Buddy?",
             answer: [
-                "1.- To mint your bearded buddy you need a Metamask account (this is your digital wallet).",
-                "2.- Then you will need to fund your wallet with ethereum.",
-                "3.- After that, you press the mint button on our page and connect your wallet to the project.",
-                "4.- Finally and the best step, you select how many Bearded Buddies you want!"
+                "There’s 3 Ways to mint a Bearded Buddy",
+                "1.- With Credit/Debit Card, go to Mint Button.",
+                "2.- With Solana. Go to Mint button and use Crossmint.",
+                "3.- Through your Metamask wallet with ETH.",
             ],
         },
     ]
