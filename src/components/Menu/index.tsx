@@ -82,7 +82,7 @@ export function Menu() {
         <a
           className={styles.button}
           target='_blank'
-          href="https://storage.googleapis.com/beardedbuddies/Bearded%20Buddies%20Litepaper.pdf"
+          href="https://storage.googleapis.com/beardedbuddies/LITE_PAPER_2022_DICIEMBRE.pdf"
           rel="noopener noreferrer"
         >
           Litepaper
