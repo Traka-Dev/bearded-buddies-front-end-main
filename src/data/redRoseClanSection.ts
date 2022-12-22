@@ -17,11 +17,11 @@ export const strings = {
         },
         {
             id: 1,
-            text: "Clan members will have VIP access to the BB house.",
+            text: "Clan members have VIP access to in real life events",
         },
         {
             id: 2,
-            text: "Clan members will get a special gift at soldout."
+            text: "Clan members will receive unique RRC clothing at sold-out."
         }
     ]
 }
