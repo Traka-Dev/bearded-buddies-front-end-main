@@ -1,6 +1,7 @@
 import React, {createRef, useEffect} from "react";
 import styles from "./index.module.scss";
 import { strings } from "../../data/footer";
+import { links } from "../../data/socialMediaLinks";
 import MediaButton from "./MediaButton";
 import twitterLogo from "../../assets/icons/twitter-blue-logo.png";
 import discordLogo from "../../assets/icons/discord-logo.png";
@@ -37,13 +38,13 @@ function FooterSection() {
                 label={strings.twitter.label}
                 title={strings.twitter.title}
                 image={twitterLogo}
-                link="https://twitter.com/beardedbudd1es"
+                link={links.twitter}
             />
             <MediaButton
                 label={strings.discord.label}
                 title={strings.discord.title}
                 image={discordLogo}
-                link="https://discord.gg/aWjmfuucZa"
+                link={links.discord}
             />
           </div>
           <div>
