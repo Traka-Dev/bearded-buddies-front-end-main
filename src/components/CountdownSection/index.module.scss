@@ -1,6 +1,5 @@
 @import "../../sass/utils/colors.scss";
 @import "../../sass/utils/mixins.scss";
-
 .wrapper {
     // height: 760px;
     z-index: 1;
@@ -50,6 +49,7 @@
 .titleContainer {
     @include desktop {
         width: 515px;
+        text-align: center;
     }
 }
 
@@ -118,7 +118,7 @@
     @include desktop {
         justify-content: flex-end;
         padding-top: 100px;
-        width: 45%; 
+        width: 45%;
     }
 }
 
@@ -184,7 +184,6 @@
         margin-left: -50px;
     }
 }
-
 
 .buttonRow {
     display: flex;

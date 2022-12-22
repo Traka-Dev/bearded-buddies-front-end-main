@@ -1,10 +1,10 @@
 export const strings = {
     title: {
-        one: "NOT ",
-        two: "just another ",
-        three: "NFT"
+        one: "A brand made from ",
+        two: "entrepreneurs to support ",
+        three: "Entrepreneurs"
     },
-    body: "We want a long lasting community with a clear collective goal: to connect entrepreneurs, investors and the best teams in a professional networking space centered around innovative projects.",
+    body: "Our mission is to create a solid community that lasts and grows over time, providing the necessary tools and connections to entrepreneurs, small businesses, and startups so they may reach their goals.",
     footer: "KEEP SCROLLING DOWN AND DISCOVER THE FULL POTENTIAL OF BB.",
     countdown: {
         days: "days",
