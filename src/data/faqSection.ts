@@ -40,7 +40,7 @@ export const strings = {
             id: 5,
             question: "How do I mint a Bearded Buddy?",
             answer: [
-                "There’s 3 Ways to mint a Bearded Buddy",
+                "There's 3 Ways to mint a Bearded Buddy",
                 "1.- With Credit/Debit Card, go to Mint Button.",
                 "2.- With Solana. Go to Mint button and use Crossmint.",
                 "3.- Through your Metamask wallet with ETH.",
