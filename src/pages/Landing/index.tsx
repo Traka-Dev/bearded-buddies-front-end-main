@@ -30,10 +30,14 @@ function Landing() {
   }, []);
 
   useEffect(() => {
+    /*
     if (isMobile) {
       setLoading(true);
       setVisible(true);
     }
+    */
+    setLoading(true);
+    setVisible(true);
   }, [])
 
   return (
