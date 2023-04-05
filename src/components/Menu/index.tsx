@@ -73,12 +73,12 @@ export function Menu() {
           <MenuItems className={styles.menuItemsMobile} list={itemList.slice(3,7)} />
       </div>
       <div className={styles.walletConnector}>
-        {/* BUTTONS DISABLED UNTIL END OF JULY */}
+        {/* BUTTONS DISABLED UNTIL END OF JULY 
         <MintButton  title="Mint" customClass={styles.button} open={toggle} /> 
-
          <Button className={`${styles.button}  ${window.ethereum?.selectedAddress  ? styles.connected : ''}`} 
                 onClick={() => connectAccount()} >{window.ethereum?.selectedAddress ? truncateEthAddress(window.ethereum?.selectedAddress) : 'Wallet'}</Button> 
          <MintButton title="Collection" customClass={styles.button} open={toggleCollection} /> 
+      */}
         <a
           className={styles.button}
           target='_blank'
