@@ -16,7 +16,7 @@ export function Countdown({seconds, minutes, hours, days}: CountdownProps) {
     return(
       <div className={styles.countdown}>
         <div className={stylesNum.container}>                          
-          <div data-value={"Live Minting"} className={stylesNum.number}>{'Live Minting'}</div>           
+          <div data-value={"Comming Soon"} className={stylesNum.number}>{'Comming Soon'}</div>           
         </div>
       </div>
     )
