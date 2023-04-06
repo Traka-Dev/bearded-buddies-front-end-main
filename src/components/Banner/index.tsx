@@ -68,7 +68,7 @@ export function Menu({ handleVisible }: { handleVisible: () => void }) {
           <VideoComponent poster="https://storage.googleapis.com/beardedbuddies/banner-responsive.png" className={styles.mobileImg} src="https://storage.googleapis.com/beardedbuddies/banner-responsive.mp4" />
         <img className={styles.logo} src={logo} alt="logo" />
       </div>     
-      <MintButton  title="Comming Soon" customClass={styles.mint} />
+      <MintButton title="Mint" customClass={styles.mint} open={toggle} />
       <Modal {...{ isShowingMint, toggle }} />
       <MyCollection {...{ isShowingCollection, toggleCollection }} />
     </div>
