@@ -27,7 +27,13 @@ export const strings = {
                 linkedin: "https://www.linkedin.com/in/melisa-jhong-a8a61b180/",
                 instagram: "https://www.instagram.com/chinabrnd/",
                 twitter: "",
-            },
+            },            
+            {
+                name: "Regine",
+                lastName: "",
+                role: "2D Artist",
+                twitter: "https://twitter.com/regggiee_?s=20",
+            },            
             /*{
                 number: "4",
                 name: "M Blockchain",
@@ -54,6 +60,18 @@ export const strings = {
                 linkedin: "https://www.linkedin.com/in/marco-antonio-rodr%C3%ADguez-macedo-b50254163/",
                 instagram: "",
                 twitter: "",
+            },
+            {
+                name: "Jorge",
+                lastName: "Jaime",
+                role: "Blockchain Developer",
+                twitter: "https://twitter.com/trakadev",
+            },
+            {
+                name: "Juan Miguel",
+                lastName: "",
+                role: "Lawyer & Compliance Area",
+                linkedin: "https://www.linkedin.com/in/juan-miguel-galup-1b83661a2/",
             },
             /*{
                 name: "Two",

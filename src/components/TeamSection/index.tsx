@@ -85,7 +85,7 @@ export function TeamSection() {
                                 lastName={member.lastName}
                                 role={member.role}
                                 imageProps={members[x][y]}
-                                number={member.number}
+                                //number={member.number}
                                 // image={members[x][y].image}
                                 // animationRef={members[x][y].animationRef}
                                 // image2={members[x][y].image2}
