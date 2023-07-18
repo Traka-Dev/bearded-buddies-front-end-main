@@ -29,12 +29,7 @@ const GifContainer = React.memo(() => {
             title={strings.buttons.twitter}
             label={strings.buttons.followUs}
           />
-        </div>
-        <div className={`${styles.buttonRow} ${styles.rowTwo}`}>
-          <MediaButton title={strings.buttons.insta} />
-          <MediaButton title={strings.buttons.tiktok} />
-          {/* <MediaButton title={strings.buttons.opensea} /> */}
-        </div>
+        </div>       
       </div>
       <div className={styles.gif} ref={bbContainer} />
       <div className={styles.topButtonContainer}>
@@ -71,14 +66,7 @@ export function CountdownSection({ targetDate }: { targetDate: number }) {
               hours={hours}
               days={days}
             />
-            <div className={styles.footerText}>{strings.footer}</div>
-            <div className={styles.bottomButtonContainer}>
-              <div className={`${styles.buttonRow} ${styles.rowTwo}`}>
-                <MediaButton title={strings.buttons.insta} />
-                <MediaButton title={strings.buttons.tiktok} />
-                {/* <MediaButton title={strings.buttons.opensea} /> */}
-              </div>
-            </div>
+            <div className={styles.footerText}>{strings.footer}</div>            
           </div>
         </div>
         <GifContainer />
