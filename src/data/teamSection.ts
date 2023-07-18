@@ -28,7 +28,7 @@ export const strings = {
                 instagram: "https://www.instagram.com/chinabrnd/",
                 twitter: "",
             },
-            {
+            /*{
                 number: "4",
                 name: "M Blockchain",
                 lastName: "Marketing",
@@ -36,17 +36,17 @@ export const strings = {
                 linkedin: "https://www.linkedin.com/in/michielhorstman",
                 instagram: "https://instagram.com/mkt4m",
                 twitter: "https://twitter.com/mkt4m",
-            },
+            },*/
         ],
         [
-            {
+            /*{
                 name: "Luis",
                 lastName: "Gomez",
                 role: "Animations / Video Editing",
                 linkedin: "https://www.linkedin.com/in/luis-animador-2d-0476aa14b/",
                 instagram: "https://instagram.com/luis.enelcel",
                 twitter: "",
-            },
+            },*/
             {
                 name: "Marco",
                 lastName: "Rodriguez",
@@ -55,14 +55,14 @@ export const strings = {
                 instagram: "",
                 twitter: "",
             },
-            {
+            /*{
                 name: "Two",
                 lastName: "Five One",
                 role: "Software Engineer",
                 linkedin: "https://www.linkedin.com/company/two-five-one-eu",
                 twitter: "",
                 instagram: ""
-            },
+            },*/
             {
                 name: "Adrian",
                 lastName: "Castro",

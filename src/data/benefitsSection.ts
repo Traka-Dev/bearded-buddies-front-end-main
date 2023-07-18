@@ -1,25 +1,25 @@
 export const strings = {
     title: "BENEFITS",
     events: {
-        title: "IRL events",
-        body: "After selling out, our first event as a community will take place. The BBcon. This event will host other NFT Projects, Speakers, and Business talks. BBcon will change the way of hosting events giving the best value and experience for all guests."
+        title: "BBcon",
+        body: "BBcon will be that space, where companies and brands can show theirs products and make themselves known,we will have talks,exhibitions and workshops."
     },
     airdrops: {
-        title: "Airdrops",
-        body: "We will count with ETH airdrops to the most active and committed members of the community. Supporting our supporters."
+        title: "Exclusive Network",
+        body: "We created an exclusive network of private investors and VCs, only holders have access!"
     },
     sales: {
-        title: "Secondary Sales",
-        body: "50% of secondary sales earnings will go directly into our treasury fund. This Fund will only be used to finance projects presented by Holders."
+        title: "BB Scholarship",
+        body: "20% of the primary and secondary sales will go directly to fund for scholarship only holders have access to this found."
     },
     network: {
-        title: "Exclusive Platform",
-        body: "BB will have its own Networking and Business Management platform. Holders will have free access and no fees charged on its use. The perfect platform to Connect, get Funding, and Manage your business. Detailed on our Litepaper."
+        title: "IRL events",
+        body: "Early access to tickets, discounts and VIP access to workshops,speakers and parties!."
     },
     dreamProject: {
-        title: "Fund your Project",
+        title: "Treasury fund",
         subtitle: "Make your dream",
-        body: "BB Holders can schedule a meeting, to present their project. After presenting your idea/business/project the Bearded Buddies team will be able to help you with funding and work teams along the way."
+        body: "B40% of the primary and secondary sales will go to our treasury fund! holders will be able to present their projects and get access to the funds!."
     },
     nextProject: {
         title: "Next Projects",
