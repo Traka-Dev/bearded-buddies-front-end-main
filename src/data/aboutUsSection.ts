@@ -70,12 +70,7 @@ export const strings = {
                     text: "Clothing Brand and Accessories",
                     pink: false,
                     list: true
-                },
-                {
-                    text: "Networking and Business managing Platform",
-                    pink: false,
-                    list: true
-                },
+                },               
                 {
                     text: "BBCON networking events and talks",
                     pink: false,
