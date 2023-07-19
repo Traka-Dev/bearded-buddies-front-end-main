@@ -24,12 +24,12 @@
 
 .planet1 {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 70px * 1.2;
+    height: 70px * 1.2;
     left: 0;
     @include desktop {
-        width: 200px;
-        height: 200px;
+        width: 200px * 1.5;
+        height: 200px * 1.5;
         left: -80px;
     }
 }
@@ -37,28 +37,28 @@
 .planet2 {
     z-index: -1;
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 70px * 1.1;
+    height: 70px * 1.1;
     right: 15%;
     top: 15%;
     @include desktop {
-        width: 300px;
-        height: 300px;
+        width: 300px * 1.2;
+        height: 300px * 1.2;
     }
 }
 
 .planet3 {
     position: absolute;
-    width: 70px;
-        height: 70px;
+    width: 70px * 1.2;
+        height: 70px * 1.2;
         bottom: -30px;
         right: 50px;
         z-index: 5;
     @include desktop {
-        width: 100px;
-        height: 100px;
-        bottom: 200px;
-        right: 200px;
+        width: 100px * 2;
+        height: 100px * 2;
+        bottom: 100px;
+        right: 100px;
     }
 }
 
