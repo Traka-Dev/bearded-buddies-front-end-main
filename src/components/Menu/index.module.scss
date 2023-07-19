@@ -37,7 +37,7 @@
   width: 100%;
   z-index: 5;
 
-  background: linear-gradient(
+  /*background: linear-gradient(
     rgba(12, 24, 46, 1) 0%,
     rgba(20, 29, 59, 1) 6.24%,
     rgba(57, 51, 121, 1) 38.86%,
@@ -45,6 +45,8 @@
     rgba(102, 77, 195, 1) 87.71%,
     rgba(108, 81, 205, 1) 100%
   );
+  */
+  background: #0f0f0f;
 
   display: flex;
   align-items: center;
@@ -57,6 +59,7 @@
       $dark-blue2,
       $dark-blue3
     );
+    background: #0f0f0f;
     height: 60px;
     padding-top: 0;
     padding-bottom: 0;

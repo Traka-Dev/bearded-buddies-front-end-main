@@ -13,12 +13,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url("https://storage.googleapis.com/beardedbuddies/team-bg2.png");
+    //background-image: url("https://storage.googleapis.com/beardedbuddies/team-bg2.png");
     @include desktop {
-        background-image: url("https://storage.googleapis.com/beardedbuddies/team-bg.png");
+        //background-image: url("https://storage.googleapis.com/beardedbuddies/team-bg.png");
         padding-top: 200px;
     padding-bottom: 250px;
     }
+    background: #0f0f0f;
 }
 
 .planet1 {
