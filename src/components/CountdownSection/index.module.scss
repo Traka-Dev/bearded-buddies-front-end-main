@@ -12,6 +12,7 @@
     background-color: black;
     padding-bottom: 60px;
     background: linear-gradient(to right, $purple, $dark-blue1, $dark-blue2);
+    background: #0f0f0f;
     @include desktop {
         padding-bottom: 200px;
     }

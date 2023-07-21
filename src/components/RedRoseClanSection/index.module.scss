@@ -13,13 +13,14 @@
   z-index: 2;
   position: relative;
   flex-direction: column;
-  background-image: url("https://storage.googleapis.com/beardedbuddies/red-rose-clan-mobile-bg.png");
+  //background-image: url("https://storage.googleapis.com/beardedbuddies/red-rose-clan-mobile-bg.png");
   @include desktop {
-    background-image: url("https://storage.googleapis.com/beardedbuddies/red-rose-clan-bg.png");
+    //background-image: url("https://storage.googleapis.com/beardedbuddies/red-rose-clan-bg.png");
     height: 900px;
     flex-direction: row;
     padding-top: 0;
   }
+  background: #0f0f0f;
 }
 
 .content {

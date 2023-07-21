@@ -13,13 +13,14 @@
   z-index: 1;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url("https://storage.googleapis.com/beardedbuddies/subscribe-bg2.png");
+  //background-image: url("https://storage.googleapis.com/beardedbuddies/subscribe-bg2.png");
   @include desktop {
-    background-image: url("https://storage.googleapis.com/beardedbuddies/subscribe-bg.png");
+    //background-image: url("https://storage.googleapis.com/beardedbuddies/subscribe-bg.png");
     height: 750px;
     padding-top: 0;
     padding-bottom: 0;
   }
+  background: #0f0f0f;
 }
 
 .modal {
