@@ -1,33 +1,33 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import Menu from '../../components/Menu';
-import Banner from "../../components/Banner";
-import CountdownSection from '../../components/CountdownSection';
-import SubscribeSection from '../../components/SubscribeSection';
-import RoadmapSection from '../../components/RoadmapSection';
-import RedRoseClanSection from '../../components/RedRoseClanSection';
-import AboutUsSection from "../../components/AboutUsSection";
-import TeamSection from '../../components/TeamSection';
-import FaqSection from '../../components/FaqSection';
-import Footer from '../../components/Footer';
-import NftSection from '../../components/NftSection';
-import BenefitsSection from '../../components/BenefitsSection';
-import {isMobile} from 'react-device-detect';
-import Loading from '../../components/Loading';
-import { Helmet } from "react-helmet";
+import React, { useCallback, useEffect, useState } from "react"
+import Menu from "../../components/Menu"
+import Banner from "../../components/Banner"
+import CountdownSection from "../../components/CountdownSection"
+import SubscribeSection from "../../components/SubscribeSection"
+import RoadmapSection from "../../components/RoadmapSection"
+import RedRoseClanSection from "../../components/RedRoseClanSection"
+import AboutUsSection from "../../components/AboutUsSection"
+import TeamSection from "../../components/TeamSection"
+import FaqSection from "../../components/FaqSection"
+import Footer from "../../components/Footer"
+import NftSection from "../../components/NftSection"
+import BenefitsSection from "../../components/BenefitsSection"
+import { isMobile } from "react-device-detect"
+import Loading from "../../components/Loading"
+import { Helmet } from "react-helmet"
 
-const targetDate = new Date(2022, 7, 6).getTime();
+const targetDate = new Date(2022, 7, 6).getTime()
 
 function Landing() {
-  const [visible, setVisible] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   const handleLoading = useCallback(() => {
-    setLoading(true);
-  }, []);
+    setLoading(true)
+  }, [])
 
   const handleVisible = useCallback(() => {
-    setVisible(true);
-  }, []);
+    setVisible(true)
+  }, [])
 
   useEffect(() => {
     /*
@@ -36,16 +36,28 @@ function Landing() {
       setVisible(true);
     }
     */
-    setLoading(true);
-    setVisible(true);
+    setLoading(true)
+    setVisible(true)
   }, [])
 
   return (
     <div>
       <Helmet>
-        <meta charSet="utf-8"  name="description" content="Bearded Buddies" />
+        <meta charSet="utf-8" name="description" content="Bearded Buddies" />
         <title>Bearded Buddies</title>
       </Helmet>
+      <div
+        style={{
+          minHeight: "200vh",
+          minWidth: "200vw",
+          position: "fixed",
+          left: 0,
+          top: 0,
+          background: "black",
+          overflow: "hidden",
+        }}
+      ></div>
+      {/*
       <Loading loading={loading && visible} />
       <Menu />
       <Banner handleVisible={handleVisible} />
@@ -63,8 +75,9 @@ function Landing() {
         <Footer />
         </>
       ): null}
+      */}
     </div>
-  );
+  )
 }
 
-export default Landing;
+export default Landing
