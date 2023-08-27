@@ -13,6 +13,7 @@
     @include desktop {
         min-height: 1400px;
     }
+    background: #0f0f0f;
 }
 
 .planet1 {
@@ -22,10 +23,10 @@
     left: 0;
     top: 320px;
     @include desktop {
-        width: 150px;
-        height: 150px;
-        bottom: 200px;
-        right: 200px;
+        width: 150px * 1.5;
+        height: 150px * 1.5;
+        bottom: 0px;
+        right: 350px;
         top: auto;
         left: auto;
     }
@@ -38,8 +39,8 @@
     top: -40px;
     right: 10px;
     @include desktop {
-        width: 200px;
-        height: 200px;
+        width: 200px  * 1.5;
+        height: 200px  * 1.5;
         top: -70px;
         right: 150px;
     }
@@ -53,9 +54,9 @@
     bottom: 70px;
     // display: none;
     @include desktop {
-        width: 150px;
-        height: 150px;
-        left: 150px;
+        width: 150px * 1.5;
+        height: 150px * 1.5;
+        left: 75px;
         top: 600px;
     }
 }

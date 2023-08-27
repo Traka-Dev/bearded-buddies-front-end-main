@@ -56,14 +56,14 @@ export function AboutUsSection({ isMobile }: { isMobile: boolean }) {
       <div className={styles.planet1} ref={planetContainer1} />
       <div className={styles.planet2} ref={planetContainer2} />
       <div className={styles.planet3} ref={planetContainer3} />
-      {!isMobile ? (
+      {/*!isMobile ? (
         <video className={styles.video} poster={BgImage} autoPlay muted loop>
           <source
             src="https://storage.googleapis.com/beardedbuddies/about-us-bg.mp4"
             type="video/mp4"
           />
         </video>
-      ) : null}
+      ) : null*/}
       <div className={styles.container}>
         <div className={styles.title}>{strings.title}</div>
         <div className={styles.gifContainer}>
